@@ -98,8 +98,48 @@ li {
     font-size:13px;
     margin-top:70px;
 }
+
+.api-badge {
+    display: inline-block;
+    background: #F0FDF4;
+    color: #16A34A;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: 1px solid #BBF7D0;
+    margin-bottom: 10px;
+}
 </style>
 """, unsafe_allow_html=True)
+
+
+# ---------------- SIDEBAR — API INFO ----------------
+with st.sidebar:
+    st.markdown("<div class='api-badge'>REST API LIVE</div>", unsafe_allow_html=True)
+    st.markdown("### 🔌 API Endpoints")
+    st.markdown("""
+This app is also accessible via a REST API built with **FastAPI**.
+
+| Method | Endpoint |
+|--------|----------|
+| `POST` | `/api/analyze/text` |
+| `POST` | `/api/analyze/resume` |
+| `POST` | `/api/gap` |
+| `POST` | `/api/roadmap` |
+| `POST` | `/api/simulate` |
+
+Run the API locally:
+```bash
+uvicorn api:app --reload
+```
+Then visit:
+`http://localhost:8000/docs`
+for the interactive API explorer.
+    """)
+    st.divider()
+    st.markdown("<span style='font-size:12px;color:#9CA3AF;'>Built by Aditya Agarwal</span>", unsafe_allow_html=True)
+
 
 # ---------------- HEADER ----------------
 st.markdown("<h1 style='text-align:center;'>Career Intelligence</h1>", unsafe_allow_html=True)
@@ -354,10 +394,10 @@ st.markdown(
     """
     <div class='footer'>
         <div style="margin-bottom:6px;">
-            Designed with <span style="color:#EF4444;"></span> by 
+            Designed with <span style="color:#EF4444;">♥</span> by 
             <span style="font-weight:500;">Aditya Agarwal</span>
         </div>
-        Semantic intelligence • Structured AI reasoning
+        Semantic intelligence • Structured AI reasoning • REST API
     </div>
     """,
     unsafe_allow_html=True
