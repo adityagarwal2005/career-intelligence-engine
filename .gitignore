@@ -1,0 +1,25 @@
+# Virtual environments
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Environment secrets
+.env
+*.env
+
+# macOS / editor
+.DS_Store
+.vscode/*.log
+
+# Runtime artifacts
+*.sqlite3
+*.db
+*.pid
+
+# Jupyter
+.ipynb_checkpoints/

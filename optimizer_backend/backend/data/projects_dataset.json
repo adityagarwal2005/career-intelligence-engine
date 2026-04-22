@@ -1,0 +1,226 @@
+[
+  {
+    "id": 1,
+    "name": "Career Intelligence Suite",
+    "tech_stack": ["FastAPI", "Streamlit", "OpenAI API", "PostgreSQL", "Vector Embeddings"],
+    "description": "AI-powered platform for career planning and resume optimization with role discovery, skill-gap analysis, 90-day roadmaps, and resume parsing.",
+    "bullets": [
+      "Built FastAPI backend with 3-stage LLM pipeline (analysis, composition, QA) for resume optimization",
+      "Implemented OpenAI integration with retry logic and JSON repair for robust API calls",
+      "Developed Streamlit frontend with career discovery using embedding-based skill matching",
+      "Created multi-format resume parser supporting PDF, DOCX, TXT, and markdown files",
+      "Designed vector embedding system with cosine similarity search for role matching"
+    ],
+    "keywords": ["resume optimization", "career discovery", "AI pipeline", "skill matching", "LLM integration", "NLP"],
+    "required_skills": ["Python", "FastAPI", "Streamlit", "OpenAI API", "NLP"],
+    "domain": ["AI/ML", "Career Tech", "SaaS Platform"]
+  },
+  {
+    "id": 2,
+    "name": "Django E-Commerce Platform",
+    "tech_stack": ["Django", "Django REST Framework", "PostgreSQL", "Celery", "Redis"],
+    "description": "Full-stack e-commerce platform with product catalog, cart management, payment integration, and order processing.",
+    "bullets": [
+      "Developed scalable Django REST API with JWT authentication and role-based permissions",
+      "Implemented Celery task queue for async order processing and email notifications",
+      "Created PostgreSQL database schema with optimized queries for product search and filtering",
+      "Built admin dashboard for inventory management and sales analytics",
+      "Integrated Stripe payment gateway with webhook handling for transaction verification"
+    ],
+    "keywords": ["e-commerce", "REST API", "payment processing", "async tasks", "inventory management", "authentication"],
+    "required_skills": ["Python", "Django", "PostgreSQL", "Celery", "Payment APIs"],
+    "domain": ["E-Commerce", "Backend Development", "SaaS"]
+  },
+  {
+    "id": 3,
+    "name": "React Analytics Dashboard",
+    "tech_stack": ["React", "TypeScript", "Recharts", "Redux", "Tailwind CSS"],
+    "description": "Real-time analytics dashboard for business metrics visualization with interactive charts, filters, and data export.",
+    "bullets": [
+      "Built responsive React dashboard with 15+ chart types using Recharts library",
+      "Implemented Redux state management for efficient data flow and component communication",
+      "Created dynamic filtering system with real-time data updates via WebSocket integration",
+      "Designed mobile-first UI with Tailwind CSS achieving 95+ Lighthouse score",
+      "Developed data export features (CSV, PDF) with custom formatting and scheduling"
+    ],
+    "keywords": ["data visualization", "real-time analytics", "interactive charts", "responsive design", "frontend optimization"],
+    "required_skills": ["React", "TypeScript", "Redux", "CSS", "Data Visualization"],
+    "domain": ["Frontend", "Analytics", "Business Intelligence"]
+  },
+  {
+    "id": 4,
+    "name": "ML Recommendation Engine",
+    "tech_stack": ["Python", "scikit-learn", "TensorFlow", "PostgreSQL", "FastAPI"],
+    "description": "Collaborative filtering recommendation system using matrix factorization to deliver personalized product suggestions.",
+    "bullets": [
+      "Implemented collaborative filtering with matrix factorization achieving 0.82 RMSE on test set",
+      "Built feature engineering pipeline to process 1M+ user interactions efficiently",
+      "Created FastAPI endpoint for real-time recommendations with <100ms response time",
+      "Developed offline batch processing for generating daily recommendation updates",
+      "Set up monitoring dashboard tracking model performance and inference latency metrics"
+    ],
+    "keywords": ["machine learning", "recommendation system", "collaborative filtering", "model evaluation", "batch processing"],
+    "required_skills": ["Python", "scikit-learn", "TensorFlow", "SQL", "ML Algorithms"],
+    "domain": ["Machine Learning", "Data Science", "Backend"]
+  },
+  {
+    "id": 5,
+    "name": "Real-time Chat Application",
+    "tech_stack": ["FastAPI", "WebSocket", "React", "PostgreSQL", "Redis"],
+    "description": "Scalable chat platform with real-time messaging, user presence, message history, and file sharing capabilities.",
+    "bullets": [
+      "Designed WebSocket-based architecture supporting 10K+ concurrent connections",
+      "Implemented message persistence in PostgreSQL with efficient indexing for history queries",
+      "Built React UI with optimistic updates and typing indicators for smooth UX",
+      "Created Redis pub/sub layer for inter-service communication and presence tracking",
+      "Developed file upload system with virus scanning and storage optimization"
+    ],
+    "keywords": ["real-time communication", "WebSocket", "chat system", "scalability", "presence tracking"],
+    "required_skills": ["FastAPI", "WebSocket", "React", "PostgreSQL", "Redis"],
+    "domain": ["Backend", "Frontend", "Real-time Systems"]
+  },
+  {
+    "id": 6,
+    "name": "ETL Data Pipeline",
+    "tech_stack": ["Python", "Apache Airflow", "PostgreSQL", "Pandas", "SQL"],
+    "description": "Automated ETL workflow for extracting data from multiple sources, transforming it, and loading into centralized warehouse.",
+    "bullets": [
+      "Designed Airflow DAGs for orchestrating 20+ data pipelines with SLA monitoring",
+      "Implemented incremental loading strategy reducing processing time by 70%",
+      "Created data quality checks and validation framework catching anomalies early",
+      "Built monitoring alerts for pipeline failures with automatic retry logic",
+      "Developed documentation and runbooks for operations team troubleshooting"
+    ],
+    "keywords": ["data pipeline", "ETL", "orchestration", "data quality", "warehouse", "Airflow"],
+    "required_skills": ["Python", "Apache Airflow", "SQL", "PostgreSQL", "Data Engineering"],
+    "domain": ["Data Engineering", "Backend", "DevOps"]
+  },
+  {
+    "id": 7,
+    "name": "Mobile App - React Native",
+    "tech_stack": ["React Native", "TypeScript", "Firebase", "Redux", "Expo"],
+    "description": "Cross-platform mobile application for iOS and Android with offline support and push notifications.",
+    "bullets": [
+      "Developed React Native app deployed to App Store and Google Play with 50K+ downloads",
+      "Implemented Firebase Cloud Messaging for push notifications and in-app messaging",
+      "Created offline-first architecture with local SQLite database and sync logic",
+      "Built custom gesture handlers and animations for fluid mobile UX",
+      "Set up CI/CD pipeline for automated testing and app store deployment"
+    ],
+    "keywords": ["React Native", "mobile development", "cross-platform", "push notifications", "offline-first"],
+    "required_skills": ["React Native", "TypeScript", "Firebase", "Mobile Development"],
+    "domain": ["Mobile", "Frontend", "Cross-Platform"]
+  },
+  {
+    "id": 8,
+    "name": "GraphQL API Gateway",
+    "tech_stack": ["GraphQL", "Apollo Server", "Python", "FastAPI", "PostgreSQL"],
+    "description": "GraphQL gateway aggregating multiple backend services with caching, subscriptions, and federation support.",
+    "bullets": [
+      "Built Apollo Server GraphQL API with dataloader pattern for N+1 query prevention",
+      "Implemented field-level caching reducing downstream API calls by 65%",
+      "Created subscription system for real-time data updates using WebSockets",
+      "Designed schema stitching to federate microservices transparently",
+      "Added request validation and rate limiting middleware for security"
+    ],
+    "keywords": ["GraphQL", "API gateway", "subscriptions", "caching", "federation", "optimization"],
+    "required_skills": ["GraphQL", "Apollo Server", "API Design", "Database Optimization"],
+    "domain": ["Backend", "API Development", "Microservices"]
+  },
+  {
+    "id": 9,
+    "name": "Docker & Kubernetes Deployment",
+    "tech_stack": ["Docker", "Kubernetes", "Helm", "FastAPI", "PostgreSQL"],
+    "description": "Containerized microservices infrastructure with Kubernetes orchestration, auto-scaling, and zero-downtime deployments.",
+    "bullets": [
+      "Created multi-stage Dockerfiles reducing image size by 80% while maintaining functionality",
+      "Designed Kubernetes manifests for high-availability deployment across 3 availability zones",
+      "Implemented Helm charts for parameterized deployments across staging and production",
+      "Set up horizontal pod autoscaling based on CPU and custom metrics",
+      "Configured health checks and rolling updates ensuring zero-downtime deployments"
+    ],
+    "keywords": ["Docker", "Kubernetes", "containerization", "DevOps", "infrastructure", "orchestration"],
+    "required_skills": ["Docker", "Kubernetes", "DevOps", "Linux", "Infrastructure"],
+    "domain": ["DevOps", "Infrastructure", "Backend"]
+  },
+  {
+    "id": 10,
+    "name": "Python CLI Tool Suite",
+    "tech_stack": ["Python", "Click", "Rich", "Pytest", "Packaging"],
+    "description": "Production-grade command-line tools for data processing, automation, and developer productivity.",
+    "bullets": [
+      "Built CLI with Click framework supporting 15+ commands with hierarchical subcommands",
+      "Created rich terminal output with tables, progress bars, and color coding using Rich library",
+      "Implemented comprehensive test suite with 90%+ code coverage using Pytest",
+      "Packaged tool for PyPI distribution with automated versioning and changelog generation",
+      "Added bash/zsh completion scripts and extensive help documentation"
+    ],
+    "keywords": ["CLI", "automation", "developer tools", "testing", "packaging", "Python"],
+    "required_skills": ["Python", "Click", "Testing", "CLI Design"],
+    "domain": ["Backend", "Developer Tools", "Automation"]
+  },
+  {
+    "id": 11,
+    "name": "PostgreSQL Query Optimization",
+    "tech_stack": ["PostgreSQL", "SQL", "Python", "pg_stat_statements", "EXPLAIN"],
+    "description": "Performance optimization project including indexing strategies, query tuning, and vacuum analysis.",
+    "bullets": [
+      "Analyzed query execution plans with EXPLAIN identifying full table scans on critical queries",
+      "Designed multi-column indexes and partial indexes reducing query time by 85%",
+      "Implemented query parameterization and connection pooling (PgBouncer) for throughput increase",
+      "Created monitoring dashboards tracking table bloat and vacuum efficiency metrics",
+      "Documented indexing strategy and query optimization patterns for team reference"
+    ],
+    "keywords": ["PostgreSQL", "query optimization", "indexing", "performance tuning", "database design", "SQL"],
+    "required_skills": ["PostgreSQL", "SQL", "Performance Tuning", "Database Design"],
+    "domain": ["Backend", "Database", "Infrastructure"]
+  },
+  {
+    "id": 12,
+    "name": "Microservices with Service Discovery",
+    "tech_stack": ["FastAPI", "Consul", "gRPC", "Python", "Docker"],
+    "description": "Distributed microservices platform with automatic service discovery, inter-service communication, and circuit breaker patterns.",
+    "bullets": [
+      "Designed 8 independent microservices with clear domain boundaries and async communication",
+      "Implemented Consul service discovery with health checks and DNS-based service routing",
+      "Built gRPC services for low-latency inter-service communication reducing overhead by 60%",
+      "Created circuit breaker implementation to prevent cascade failures across services",
+      "Developed comprehensive API documentation and Postman collections for service testing"
+    ],
+    "keywords": ["microservices", "service discovery", "distributed systems", "gRPC", "resilience", "architecture"],
+    "required_skills": ["FastAPI", "Microservices", "Distributed Systems", "Python"],
+    "domain": ["Backend", "Architecture", "Infrastructure"]
+  },
+  {
+    "id": 13,
+    "name": "CI/CD Pipeline & Testing Framework",
+    "tech_stack": ["Python", "Pytest", "GitHub Actions", "Docker", "PostgreSQL"],
+    "description": "Comprehensive testing framework and continuous integration pipeline ensuring code quality and reliable deployments.",
+    "bullets": [
+      "Created unit tests, integration tests, and end-to-end tests with 85%+ coverage across codebase",
+      "Designed GitHub Actions workflows for automated testing on every PR and scheduled runs",
+      "Implemented database schema versioning with automated migrations in CI/CD pipeline",
+      "Built performance benchmarking suite tracking regression and optimization gains over time",
+      "Set up automated security scanning (SAST/DAST) and dependency vulnerability checks"
+    ],
+    "keywords": ["testing", "CI/CD", "automation", "quality assurance", "deployment", "GitHub Actions"],
+    "required_skills": ["Pytest", "GitHub Actions", "Testing", "DevOps"],
+    "domain": ["DevOps", "QA", "Backend"]
+  },
+  {
+    "id": 14,
+    "name": "NLP Text Classification Model",
+    "tech_stack": ["Python", "Hugging Face Transformers", "PyTorch", "FastAPI", "PostgreSQL"],
+    "description": "Fine-tuned BERT model for multi-class text classification achieving state-of-the-art accuracy on domain-specific data.",
+    "bullets": [
+      "Fine-tuned BERT model on 50K labeled examples achieving 94% F1-score on test set",
+      "Implemented data augmentation and active learning to maximize label efficiency",
+      "Built FastAPI endpoint for inference with batch processing and caching for 10x throughput",
+      "Created visualization dashboards showing model confidence scores and error analysis",
+      "Deployed model with A/B testing framework comparing against baseline classifier"
+    ],
+    "keywords": ["NLP", "transformers", "BERT", "text classification", "fine-tuning", "machine learning"],
+    "required_skills": ["Python", "PyTorch", "NLP", "Hugging Face", "Machine Learning"],
+    "domain": ["Machine Learning", "NLP", "AI"]
+  }
+]

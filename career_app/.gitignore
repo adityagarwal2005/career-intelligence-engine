@@ -1,0 +1,36 @@
+# Environment variables - NEVER upload this
+.env
+.env.local
+.env.*
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter notebooks (optional - remove if you want to upload these)
+*.ipynb
+
+# Large or sensitive data files
+*.pkl
