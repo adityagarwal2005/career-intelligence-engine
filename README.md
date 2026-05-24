@@ -35,7 +35,7 @@ source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 pip install -r src/requirements.txt
 ```
 
-4. **Configure API key:**
+4. **Configure API key (Local Development):**
 
 Edit `src/services/.env`:
 ```env
@@ -47,19 +47,57 @@ TEMP_QA=0.1
 MAX_RETRIES=2
 ```
 
+**For Streamlit Cloud:** Add secrets through the dashboard instead (see Streamlit Cloud Deployment section below).
+
 ### Run the Application
 
-**Option 1 - Using the run script (Recommended):**
+**Option 1 - Direct Streamlit command (Recommended for local development):**
+```bash
+streamlit run src/ui/app.py
+```
+
+**Option 2 - Using the run script:**
 ```bash
 python run.py
 ```
 
-**Option 2 - Direct Streamlit command:**
-```bash
-python -m streamlit run src/ui/app.py
-```
+The app will be available at: **http://localhost:8501**
 
-The app will be available at: **http://127.0.0.1:8501**
+## Streamlit Cloud Deployment
+
+Deploy this application to Streamlit Cloud to get a shareable public link for your resume:
+
+### Steps to Deploy
+
+1. **Push your code to GitHub:**
+   ```bash
+   git push origin main
+   ```
+
+2. **Deploy on Streamlit Cloud:**
+   - Go to [share.streamlit.io](https://share.streamlit.io)
+   - Sign in with your GitHub account
+   - Click "New app"
+   - Select your repository and branch
+   - Set the main file path to `src/ui/app.py`
+   - Click "Deploy"
+
+3. **Add your OpenAI API Key:**
+   - In your Streamlit Cloud app dashboard, go to **Settings** → **Secrets**
+   - Add your environment variables:
+     ```
+     OPENAI_API_KEY = "sk-your_actual_openai_api_key_here"
+     OPENAI_MODEL = "gpt-4o-mini"
+     TEMP_ANALYSIS = 0.2
+     TEMP_COMPOSITION = 0.35
+     TEMP_QA = 0.1
+     MAX_RETRIES = 2
+     ```
+   - Click "Save"
+
+4. **Your app is live!** You can now share the Streamlit Cloud URL in your resume and portfolio.
+
+**Note:** The `.streamlit/config.toml` and `.streamlit/secrets.toml.example` files are configured for Streamlit Cloud deployment.
 
 ## Project Structure
 

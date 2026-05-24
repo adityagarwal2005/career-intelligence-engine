@@ -2,8 +2,9 @@
 """
 Career Intelligence Suite - Main Entry Point
 
-Run the Streamlit application with:
-    python run.py
+This script is configured to run on Streamlit Cloud.
+Locally, run with:
+    streamlit run src/ui/app.py
 """
 
 import subprocess
@@ -17,10 +18,6 @@ def main():
     if not app_path.exists():
         print(f"Error: Application file not found at {app_path}")
         sys.exit(1)
-    
-    print("Starting Career Intelligence Suite...")
-    print(f"Local URL: http://127.0.0.1:8501")
-    print("")
     
     subprocess.run(
         [sys.executable, "-m", "streamlit", "run", str(app_path)],
